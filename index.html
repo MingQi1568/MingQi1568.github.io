@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ming Qi Resume</title>
+    <style>
+      img {
+        width: 200px;
+        border-radius: 10px;
+        float: center;
+        margin-right: 10px;
+        display: block;
+        margin: auto;
+      }
+      p.username {
+        font-weight: bold;
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2.aboutMe {
+        text-align: center;
+      }
+      p.aboutMe {
+        text-align: center;
+      }
+      a.aboutMe {
+        display: block;
+        text-align: center;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        height: 100vh; /* Full viewport height */
+      }
+      .left-half {
+        background-color: #101010;
+        padding: 20px;
+      }
+      .right-half {
+        background-color: #101010;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body style="background-color: #101010; color: #E0E0E0;">
+    <div class="container">
+      <div class="left-half">
+        <h1>Ming Qi</h1>
+
+    <!--<h2 class="aboutMe">About Me</h2> -->
+    <img src="images/mingGraduationImage.png" alt="Ming Picture" />
+    <p class="username">Me, Ming!</p>
+    <p class="aboutMe">
+      I'm a sophomore majoring in Computer Science and Physics at UPenn. I like
+      playing soccer, going to the gym and playing video/board games with my
+      friends. I would love to be a part of Google Deepmind, specifically
+      working on something like Alphastar, and make agents to play my favorite
+      games, like Civiliztion 6, Counter Strike and Coup.
+    </p>
+    <h3 style="text-align: center;">Relevant Links</h3>
+    
+    <a class = "aboutMe"
+    href="../Resumes/Ming Qi Resume.pdf"
+    target="_blank"
+    
+  >Download
+  My
+  Resume</a>
+  <a class="aboutMe" href="www.linkedin.com/in/ming-qi-"> LinkedIn </a> 
+  <a class="aboutMe" href="https://github.com/MingQi1568"> Github </a>
+    
+
+    </div> 
+      <div class="right-half">
+        <h2>Projects</h2>
+
+    <h3>Deep Reference Prior Implementation</h3>
+    <p>
+      Implemented deep reference prior model as outlined in Professor
+      Chaudhari's paper linked below, which maximizes mutual information between
+      weights and data for a set of atoms, allowing the neural networks to train
+      on very small amounts of labeled data. Conducted semi-supervised learning
+      on MNIST data using deep reference prior, achieving an 82% accuracy with
+      just 3 labeled images per category.
+    </p>
+    <a href="https://arxiv.org/pdf/2202.00187"> Deep Reference Priors Paper</a>
+    <a href="https://github.com/MingQi1568/MNISTprior"> Priors Github Repo</a>
+    <h3>Airline Delay Prediciton Project</h3>
+    <p>
+      We want to see if bad weather could predict airline delays. Merged a
+      dataset on 2015 flights from Kaggle and a county weather dataset, joined
+      them together to get the weather at the time of all flights. After
+      cleaning the data, my teammates did some hypothesis testing. I
+      preprocessed the data using one hot encoding for the airlines and
+      standardized the condinuous features, then used GridSearch to
+      hypterparameter tune a Random Forest XGBoosted Model. I also made a neural
+      network, with a custom loss function that did binary cross entropy but
+      allowed higher positive class weights to offeset the class imablance of
+      the dataset. We found that weather was not a reliable predictor of delays,
+      possibly due to airlines taking the necessary precautions in advance for
+      bad weather.
+    </p>
+    <a href="https://github.com/Neyhar/CIS-545-Final-Project">
+      Airline Delays Github Repo</a
+    >
+      </div>
+    </div>
+    
+    
+  </body>
+</html>
